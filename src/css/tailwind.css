@@ -5,3 +5,13 @@
 .wrapper {
     @apply w-[90%] max-w-screen-xl mx-auto overflow-hidden
 }
+
+@font-face {
+    font-family: 'antropos-bw2g';
+    src: url("../fonts/AntroposFreefont-BW2G.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'baarphilos-mvjn';
+    src: url("../fonts/BaarPhilos-MVjn.woff") format('woff');
+}
