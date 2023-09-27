@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"  class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -11,25 +11,26 @@
 
 <body>
 
-    <header class="bg-blue-500 min-h-[600px]">
+    <header class="bg-blue-500">
 
-        <nav class="py-6 text-white grid justify-items-center items-center gap-6 wrapper">
+        <nav class="py-6 text-white grid justify-items-center items-center gap-6 wrapper md:grid-flow-col md:justify-between">
 
             <a href="./">
                 <h2 class="text-3xl font-extrabold">Landing.</h2>
             </a>
 
             <div class="space-x-4">
-                <a href="">Inicio</a>
-                <a href="">Habilidades</a>
-                <a href="">Proyectos</a>
+                <a href="#">Inicio</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
             </div>
         </nav>
 
-        <section class="wrapper py-14 flex flex-col items-center gap-12 text-center">
+        <section class="wrapper py-14 flex flex-col items-center gap-12 text-center md:flex-row  min-h-[600px]">
 
-            <img src="./assets/hero_illustration.svg" alt="" class="max-w-lg w-full">
-            <div class="text-white space-y-6">
+            <img src="./assets/hero_illustration.svg" alt="" class="max-w-lg w-full md:w-2/5">
+
+            <div class="text-white space-y-6 md:w-3/5 md:text-left">
                 <h1 class="text-3xl font-bold ">Mi nombre es Daniel Uribe, y será un placer ayudarte!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, possimus pariatur? Minus, sint
                     sequi. Ipsa reprehenderit nobis id laudantium libero?</p>
@@ -43,7 +44,7 @@
 
     <main>
         <!-- Nuestras Habilidades -->
-        <section class="wrapper py-20 text-center">
+        <section class="wrapper py-20 text-center" id="habilidades">
 
             <h2 class="text-3xl font-bold">Nuestras Habilidades! 👇</h2>
 
@@ -94,7 +95,7 @@
         </section>
 
         <!-- Nuestro Trabajo -->
-        <section class="bg-slate-50 py-20">
+        <section class="bg-slate-50 py-20" id="proyectos">
             <div class="wrapper text-center">
 
                 <h2 class="text-3xl font-bold mb-6">¡Nuestro Trabajo!</h2>
@@ -165,35 +166,29 @@
 
     </main>
 
-    <footer>
-
-        <section class="bg-sky-200 text-center grid gap-6">
-
-            <h2 class="text-3xl font-bold">Landing.</h2>
-
-            <p class="font-light">micorrreo@micorreo.com</p>
-
-            <hr>
-
-            <section>
-
-                <div>
+    <footer class="bg-sky-200">
+        <div>
+            <section class="wrapper flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+                <h2 class="text-3xl font-bold text-slate-900">Landing.</h2>
+                <p class="text-slate-600">micorrreo@micorreo.com</p>
+            </section>
+        
+            <section class="wrapper flex flex-col text-center gap-6 pt-8 text-slate-900">
+                <div class="flex justify-center gap-4 text-center">
                     <a href="#">Inicio</a>
-                    <a href="#">Habilidades</a>
-                    <a href="#">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#proyectos">Proyectos</a>
                 </div>
 
-                <div>
-                    <a href="#"><img src="./assets/fb.svg" alt=""></a>
-                    <a href="#"><img src="./assets/instagram.svg" alt=""></a>
-                    <a href="#"><img src="./assets/twitter.svg" alt=""></a>
+                <div class="grid grid-flow-col justify-center gap-8 pb-10">
+                    <a href="#"><img class="w-7" src="./assets/fb.svg" alt=""></a>
+                    <a href="#"><img class="w-7" src="./assets/instagram.svg" alt=""></a>
+                    <a href="#"><img class="w-7" src="./assets/twitter.svg" alt=""></a>
                 </div>
 
             </section>
 
-
-
-        </section>
+        </div>
 
     </footer>
 
