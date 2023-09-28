@@ -31,7 +31,7 @@
             <img src="./assets/hero_illustration.svg" alt="" class="max-w-lg w-full md:w-2/5">
 
             <div class="text-white space-y-6 md:w-3/5 md:text-left">
-                <h1 class="text-3xl font-bold ">Mi nombre es Daniel Uribe, y será un placer ayudarte!</h1>
+                <h1 class="text-3xl font-bold md:text-4xl">Mi nombre es Daniel Uribe, y será un placer ayudarte!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, possimus pariatur? Minus, sint
                     sequi. Ipsa reprehenderit nobis id laudantium libero?</p>
                 <a href="#" class="inline-block bg-slate-700 py-4 px-8 rounded-xl font-bold">Contáctame ahora!</a>
@@ -46,9 +46,9 @@
         <!-- Nuestras Habilidades -->
         <section class="wrapper py-20 text-center" id="habilidades">
 
-            <h2 class="text-3xl font-bold">Nuestras Habilidades! 👇</h2>
+            <h2 class="text-3xl font-bold md:text-4xl">Nuestras Habilidades! 👇</h2>
 
-            <div class="mt-12 grid gap-8 max-w-md mx-auto">
+            <div class="mt-12 grid gap-8 max-w-md mx-auto  md:grid-flow-col md:max-w-none auto-cols-fr">
 
                 <article class="space-y-6">
 
@@ -98,14 +98,14 @@
         <section class="bg-slate-50 py-20" id="proyectos">
             <div class="wrapper text-center">
 
-                <h2 class="text-3xl font-bold mb-6">¡Nuestro Trabajo!</h2>
+                <h2 class="text-3xl font-bold mb-6 md:text-4xl">¡Nuestro Trabajo!</h2>
 
-                <p class="font-light text-xl text-slate-500">
+                <p class="font-light text-xl text-slate-500 w-2/3 mx-auto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima exercitationem aut,
                     repellat cumque maxime odio obcaecati inventore recusandae asperiores!
                 </p>
 
-                <div class="mt-12 grid gap-12">
+                <div class="mt-12 grid gap-12 md:grid-flow-col auto-cols-fr">
 
                     <article class="w-[80%] mx-auto space-y-4">
 
@@ -144,7 +144,7 @@
         </section>
 
         <!-- Formulario Contacto -->
-        <section class="wrapper py-20 grid gap-12">
+        <section class="wrapper py-20 grid gap-12 items-center md:grid-flow-col auto-cols-fr" >
 
             <div class="">
                 <h2 class="text-3xl font-bold">Dame tu correo, y te contactaré a la brevedad!</h2>
@@ -166,15 +166,16 @@
 
     </main>
 
+    <!-- Footer -->
     <footer class="bg-sky-200">
-        <div>
-            <section class="wrapper flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+        <div class="wrapper py-20">
+            <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8 md:flex-row md:justify-between md:items-center md:pb-10">
                 <h2 class="text-3xl font-bold text-slate-900">Landing.</h2>
                 <p class="text-slate-600">micorrreo@micorreo.com</p>
             </section>
         
-            <section class="wrapper flex flex-col text-center gap-6 pt-8 text-slate-900">
-                <div class="flex justify-center gap-4 text-center">
+            <section class="flex flex-col text-center gap-6 pt-8  md:flex-row-reverse md:justify-between md:items-center md:pt-10">
+                <div class="flex justify-center gap-4 text-center text-slate-900">
                     <a href="#">Inicio</a>
                     <a href="#habilidades">Habilidades</a>
                     <a href="#proyectos">Proyectos</a>
